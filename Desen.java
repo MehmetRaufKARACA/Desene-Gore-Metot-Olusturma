@@ -1,13 +1,14 @@
 import java.util.Scanner;
 public class Desen{
     public static void main(String[] args) {
+       
+        Scanner scan = new Scanner(System.in);
         System.out.print("Lütfen sayıyı girin : ");
-        Scanner input = new Scanner(System.in);
-        int number = input.nextInt();
-        System.out.println("Girdiğiniz sayı: "+number);
-        System.out.print("Çıktısı : ");
+        
+        int number = scan.nextInt();
+       
         desen(number,number,number);
-        input.close();
+        
     }
     static void desen(int a,int b,int temp)
     {
